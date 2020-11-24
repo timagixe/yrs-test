@@ -1,0 +1,28 @@
+@import 'src/styles/variables';
+
+.App {
+  text-align: center;
+
+  .AppHeader {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    .AppLogo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+  }
+
+  .AppLink {
+    color: $primary-text;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
