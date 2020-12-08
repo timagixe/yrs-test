@@ -1,9 +1,9 @@
 @import 'src/styles/variables';
 
-.App {
+.home {
   text-align: center;
 
-  .AppHeader {
+  .homeHeader {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,13 +11,13 @@
     justify-content: center;
     font-size: 2rem;
 
-    .AppLogo {
+    .homeLogo {
       height: 40vmin;
       pointer-events: none;
     }
   }
 
-  .AppLink {
+  .homeLink {
     color: $primary-text;
     text-decoration: none;
 

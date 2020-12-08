@@ -1,0 +1,15 @@
+.employeeCard {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  .employeeLetter {
+    font-size: 2rem;
+    font-weight: 900;
+    width: 1.5rem;
+  }
+
+  .employeeList {
+    margin-left: 1rem;
+  }
+}
