@@ -10,12 +10,12 @@ const App = () => (
     <Switch>
       <Route
         exact
-        path='/employees'
+        path='/yrs-test/employees'
         component={() => (
           <EmployeesProvider children={<Employees />}></EmployeesProvider>
         )}
       />
-      <Route exact path='/' component={Home} />
+      <Route exact path='/yrs-test' component={Home} />
     </Switch>
   </Router>
 );
