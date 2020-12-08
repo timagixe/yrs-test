@@ -1,5 +1,5 @@
 import classes from './MonthCard.module.scss';
-import { formatDate } from 'utils/formatDate.utility';
+import { formatDate } from 'utils';
 
 export const MonthCard = ({ monthName, employeesArray }) => {
   return (

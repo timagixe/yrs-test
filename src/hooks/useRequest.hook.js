@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-import { groupEmployeesByAlphabet } from 'utils/groupEmployeesByAlphabet.utility';
+import { groupEmployeesByAlphabet } from 'utils';
 
 export const useRequest = (baseUrl, pathName) => {
   const [employees, setEmployees] = useState(new Map());
