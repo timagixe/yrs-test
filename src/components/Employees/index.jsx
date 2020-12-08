@@ -2,6 +2,7 @@ import classes from './Employees.module.scss';
 import { EmployeesContext } from 'contexts/EmployeesContext';
 import { useContext } from 'react';
 import { EmployeeCard } from 'components/EmployeeCard';
+import { MonthCard } from 'components/MonthCard';
 
 export const Employees = () => {
   const { employees, checkedEmployees, checkedEmployeesCount } = useContext(
@@ -34,20 +35,10 @@ export const Employees = () => {
               {Array.from(checkedEmployees).map(
                 ([monthName, employeesArray]) => {
                   return employeesArray.length ? (
-                    <div key={monthName} className={classes.blockWrapper}>
-                      <div className={classes.monthTitle}>{monthName}</div>
-                      <ul className={classes.monthEmployeesList}>
-                        {employeesArray.map((emp) => (
-                          <li key={emp.id}>{`${emp.firstName} ${
-                            emp.lastName
-                          } - ${new Date(emp.dob).toLocaleDateString('en-GB', {
-                            day: 'numeric',
-                            month: 'long',
-                            year: 'numeric',
-                          })}`}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    <MonthCard
+                      monthName={monthName}
+                      employeesArray={employeesArray}
+                    />
                   ) : null;
                 }
               )}
