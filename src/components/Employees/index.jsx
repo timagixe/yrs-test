@@ -36,6 +36,7 @@ export const Employees = () => {
                 ([monthName, employeesArray]) => {
                   return employeesArray.length ? (
                     <MonthCard
+                      key={monthName}
                       monthName={monthName}
                       employeesArray={employeesArray}
                     />
